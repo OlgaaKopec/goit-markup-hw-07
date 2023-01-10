@@ -1,0 +1,32 @@
+.newsletter--frame {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    width: 358px;
+    height: 50px;
+    background: #2f303a;
+    padding-left: 16px;
+  }
+  
+  .newsletter--frame:hover,
+  .newsletter--frame:focus {
+    border-color: var(--main-blue);
+  }
+  
+  .newsletter--button {
+    width: 200px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--logo-white);
+    background-color: var(--main-blue);
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    margin: 12px 0 0 12px;
+  }
+  
+  .newsletter--button__space {
+    margin-left: 24px;
+  }

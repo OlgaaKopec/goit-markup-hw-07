@@ -1,3 +1,14 @@
-body{
-    color:red
-}
+@use "./utils/globals" as *;
+@use "./utils/variables" as *;
+@import "./components/activities";
+@import "./components/clients";
+@import "./components/footer";
+@import "./components/header";
+@import "./components/logo";
+@import "./components/modal";
+@import "./components/navigation";
+@import "./components/newsletter-join";
+@import "./components/portfolio-grid";
+@import "./components/strengths";
+@import "./components/team";
+@import "./components/social-media";

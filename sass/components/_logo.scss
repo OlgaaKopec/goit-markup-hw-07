@@ -1,0 +1,19 @@
+.logo {
+    text-decoration: none;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+  }
+  
+  .logo--name-start {
+    color: var(--main-blue);
+  }
+  .logo--name-end {
+    color: var(--almost-black);
+  }
+
+  .logo--name-end-white {
+    color: var(--logo-white);
+  }

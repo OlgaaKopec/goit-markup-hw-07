@@ -1,0 +1,27 @@
+.strenghts {
+    display: flex;
+    justify-content: center;
+    margin-bottom: -94px;
+  }
+  
+  .strenghts--title {
+    font-weight: 700;
+    font-size: 14px;
+    padding-bottom: 10px;
+  }
+  
+  .strenghts--icons {
+    background: var(--team-members-backgroud);
+    border-radius: 4px;
+    align-items: center;
+    margin-bottom: 55px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    text-align: center;
+    margin-right: 30px;
+  }
+  
+  .strenghts--text {
+    line-height: 1.7;
+    color: var(--contact-grey);
+    font-size: 14px;
