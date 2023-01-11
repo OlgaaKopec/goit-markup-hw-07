@@ -1,40 +1,43 @@
+@import "../utils/globals";
+@import "../utils/variables";
+
 .header-wrapper {
-    padding: 24px 0 25px;
-    border-bottom: solid 1px var(--header-border);
-  }
-  
-  .header-wrapper .container {
+  padding: 24px 0 25px;
+  border-bottom: solid 1px $secodaryWhite;
+  .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+}
 
-  .main-window {
-    background-image: linear-gradient(
-        var(--background-dark-transparent),
-        var(--background-dark-transparent)
-      ),
-      url('../images/img-background-main.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    text-align: center;
-    display: flex;
-    padding: 0px;
-  }
-  
-  .main-window--title {
+.main-window {
+  background-image: linear-gradient(
+    $secondaryBlackTransparent,
+    $secondaryBlackTransparent
+    ),
+    url('../images/img-background-main.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  display: flex;
+  &--title {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.4;
-    color: var(--logo-white);
+    color: $primaryWhite;
     letter-spacing: 0.06em;
     margin-top: 200px;
     margin-left: 252px;
     margin-right: 252px;
   }
-
-  .menu {
-    display: flex;
-    align-items: center;
-    gap: 93px;
+  &.section{
+    padding:-94px;
   }
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 93px;
+}

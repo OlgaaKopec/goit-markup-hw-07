@@ -1,50 +1,81 @@
+@import "../utils/globals";
+@import "../utils/variables";
+
 .business-grid {
     row-gap: 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-  }
-  
-  .business-grid--title {
-    padding-top: 10px;
-    padding-left: 25px;
-    letter-spacing: 0.03em;
-  }
-  
-  .business-grid--text {
-    color: var(--logo-white);
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
+
+  &--title {
+      padding-top: 10px;
+      padding-left: 25px;
+      letter-spacing: 0.03em;
+  &__name {
+    font-weight: 700;
     font-size: 18px;
-    width: 370px;
-    height: 294px;
-    padding: 49px 45px 49px 24px;
-    letter-spacing: 0.03em;
-    line-height: 28px;
+    line-height: 2;
+    color: $primaryBlack;
+}
+&__work {
+  font-size: 16px;
+  line-height: 1.9;
+  color: $secodaryLightGrey;
+  margin-bottom: 20px;
+}
+ }
+&--img {
+  position: relative;
+  overflow: hidden;
+  & >img:hover {
+    transform: translatex(0);
+    transition-duration: $transitionDurationTimeDefault;
+    transition-timing-function: $transitionTimingDefault;
+    position: relative;
+    background: rgba(33, 150, 243, 0.9);
   }
-  
-  .business-grid--text__overlay {
+}
+
+&--text {
+  color: $primaryWhite;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  width: 370px;
+  height: 294px;
+  padding: 49px 45px 49px 24px;
+  letter-spacing: 0.03em;
+  line-height: 28px;
+  &__overlay {
     position: absolute;
     transform: translateY(100%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform $transitionDurationTimeDefault $transitionTimingDefault;
     background-color: rgba(33, 150, 243, 0.9);
     bottom: 0;
     margin: 0;
     z-index: -1;
   }
+}
+
+&--card {
+  background: $primaryWhite;
+  border: 1px solid $secondaryLighterWhite;
+
+  &:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+    transition-duration: $transitionDurationTimeDefault;
+    transition-timing-function: $transitionTimingDefault;
+  }
+}}
   
   li:hover .business-grid--text__overlay {
     transform: translateY(0);
     z-index: 1;
     cursor: pointer;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  .business-grid--img {
-    position: relative;
-    overflow: hidden;
+    transition-duration: $transitionDurationTimeDefault;
+    transition-timing-function: $transitionTimingDefault;
   }
   
   .business-components {
@@ -52,61 +83,28 @@
     justify-content: center;
     gap: 8px;
     margin-bottom: 94px;
-  }
-  
-  .business-components--item {
-    font-weight: 500;
-    font-size: 16px;
-    width: 120px;
-    height: 38px;
-    background-color: none;
-    cursor: pointer;
-    border: none;
-    border-radius: 4px;
-  }
-  
-  .business-grid--card {
-    background: var(--logo-white);
-    border: 1px solid var(--border-header);
-  }
-  
-  .business-grid--card:hover {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-      1px 4px 6px rgba(0, 0, 0, 0.16);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
 
-  .business-grid--title__name {
-    font-weight: 700;
-    font-size: 18px;
-    line-height: 2;
-    color: var(--almost-black);
-  }
-  
-  .business-grid--title__work {
-    font-size: 16px;
-    line-height: 1.9;
-    color: var(--contact-grey);
-    margin-bottom: 20px;
-  }
+    &--item {
+      font-weight: 500;
+      font-size: 16px;
+      width: 120px;
+      height: 38px;
+      background-color: none;
+      cursor: pointer;
+      border: none;
+      border-radius: 4px;
 
-  .business-components--item:hover,
-.business-components--item:focus {
-  background-color: var(--main-blue);
-  color: var(--logo-white);
-  outline: none;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
+      &:hover,
+      &:focus{
+        background-color: $primaryBlue;
+        color: $primaryWhite;
+        outline: none;
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+          0px 2px 2px rgba(0, 0, 0, 0.12);
+        border-radius: 4px;
+        transition-duration: $transitionDurationTimeDefault;
+        transition-timing-function: $transitionTimingDefault;
 
-.business-grid--img > img:hover {
-  transform: translatex(0);
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  position: relative;
-  background: rgba(33, 150, 243, 0.9);
-}
+      }
+    }
+  }

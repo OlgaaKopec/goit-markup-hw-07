@@ -1,5 +1,5 @@
-@use "./utils/globals" as *;
-@use "./utils/variables" as *;
+@import "./utils/globals";
+@import "./utils/variables";
 @import "./components/activities";
 @import "./components/clients";
 @import "./components/footer";
