@@ -27,7 +27,13 @@
     display: flex;
     gap: 10px;
     padding-top: 12px;
+
   }
+
+  .social-links-footer{
+    line-height: 1;
+  }
+
   .social-links-footer--title {
     font-weight: 700;
     margin-bottom: 20px;
@@ -36,7 +42,8 @@
  .social-links-footer--item {
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
-    padding: 12px;
+    padding: 10px 12px;
+  
     &:hover,
     &:focus{
       background-color: $primaryBlue;

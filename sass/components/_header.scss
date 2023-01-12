@@ -11,12 +11,14 @@
   }
 }
 
+
 .main-window {
   background-image: linear-gradient(
     $secondaryBlackTransparent,
     $secondaryBlackTransparent
     ),
     url('../images/img-background-main.jpg');
+  max-height: 600px;
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;
@@ -30,9 +32,6 @@
     margin-top: 200px;
     margin-left: 252px;
     margin-right: 252px;
-  }
-  &.section{
-    padding:-94px;
   }
 }
 

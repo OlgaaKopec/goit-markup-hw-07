@@ -9,10 +9,15 @@
     height: 50px;
     background: $secondaryDarkGrey;
     padding-left: 16px;
+    color: $secodaryLightGrey;
     &:hover,
     &:focus{
       border-color: $primaryBlue;
     }
+  }
+
+  .newsletter--form > label{
+      fill: $secodaryLightGrey;
   }
     
   .newsletter--button {

@@ -7,13 +7,13 @@
   }
   
 .navigation__item {
+  color: $primaryBlack;
     font-weight: 500;
     font-size: 14px;
     letter-spacing: 0.02em;
     text-decoration: none;
     line-height: 1;
     position: relative;
-
     &--active {
       color: $primaryBlue;
       &::after {
