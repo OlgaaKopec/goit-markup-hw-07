@@ -1,20 +1,20 @@
 @import "../utils/globals";
 @import "../utils/variables";
 
-.activities--list {
+.activities__list {
   display: flex;
   justify-content: space-between;
 }
 
-.activities--item {
-  &__color {
+.activities__item {
+  &--color {
   color: $primaryWhite;
   font-weight: 700;
   font-size: 14px;
   text-align: center;
   letter-spacing: 0.03em;}
 
-  &__text {
+  &--text {
     background: rgba(47, 48, 58, 0.8);
     padding: 27px 0;
     margin-top: -70px;

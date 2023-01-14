@@ -33,6 +33,8 @@
 &:focus{
   outline: none;
   color :$primaryBlue;
+  transition-duration: $transitionDurationTimeDefault;
+  transition-timing-function: $transitionTimingDefault;
   &::after {
     content: '';
     height: 4px;

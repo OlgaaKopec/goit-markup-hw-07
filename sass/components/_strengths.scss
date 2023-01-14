@@ -6,12 +6,12 @@
     justify-content: center;
     margin-bottom: -94px;
 
-    &--title {
+    &__title {
       font-weight: 700;
       font-size: 14px;
       padding-bottom: 10px;
     }
-    &--icons {
+    &__icons {
       background: $secodaryLightWhite;
       border-radius: 4px;
       align-items: center;
@@ -21,7 +21,7 @@
       text-align: center;
       margin-right: 30px;
     }
-    &--text {
+    &__text {
       line-height: 1.7;
       color: $secodaryLightGrey;
       font-size: 14px;}

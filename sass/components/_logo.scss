@@ -9,13 +9,13 @@
     font-size: 26px;
     line-height: 1.2;
 
-  &--name-start {
+  &__name-start {
     color: $primaryBlue;
   }
-  &--name-end {
+  &__name-end {
     color: $primaryBlack;
   }
-  &--name-end-white {
+  &__name-end-white {
     color: $primaryWhite;
   }
 }
