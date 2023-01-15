@@ -21,25 +21,25 @@
   <body>
     <header class="header-wrapper">
       <div class="container">
-        <nav class="menu">
+        <nav class="header">
           <a class="logo" href="#">
-            <span class="logo__name-start">Web</span><span class="log__name-end">Studio</span>
+            <span class="logo__name-start">Web</span><span class="logo__name-end">Studio</span>
           </a>
-          <ul class="menu-navigation">
-              <li><a class="navigation__item" href="index.html">Agencja</a></li>
-              <li><a class="navigation__item navigation__item--active" href="#">Portfolio</a></li>
-              <li><a class="navigation__item" href="#">Kontakt</a></li>
+          <ul class="header__navigation">
+              <li><a class="header__navigation-item" href="index.html">Agencja</a></li>
+              <li><a class="header__navigation-item header__navigation-item--active" href="#">Portfolio</a></li>
+              <li><a class="header__navigation-item" href="#">Kontakt</a></li>
           </ul>
         </nav>
-        <div class="menu-contact">
-          <a class="contact__item" href="info@devstudio.com">
-            <svg class="contact__icon" width="16px" height="12px">
+        <div class="header__contact">
+          <a class="header__contact-item" href="info@devstudio.com">
+            <svg class="header__contact-icon" width="16px" height="12px">
               <use href="./images/icons.svg#icon-envelope"></use>
             </svg>
             info@devstudio.com
           </a>
-          <a class="contact__item" href="tel:48111111111">
-            <svg class="contact__icon" class="smartphone-icon" width="10px" height="16px">
+          <a class="header__contact-item" href="tel:48111111111">
+            <svg class="header__contact-icon" class="smartphone-icon" width="10px" height="16px">
               <use href="./images/icons.svg#icon-smartphone"></use>
             </svg>
             +48 111 111 111
@@ -69,10 +69,10 @@
           </ul>
           <div>
           <ul class="business-grid">
-            <li>
+            <li class="business-grid business-grid--active">
               <figure class="business-grid__card">
                 <div class="business-grid__img">
-                  <img
+                  <img class="business-grid__img--transform"
                     src="images/hw2/1-Technocrack.jpg"
                     alt="ekran z sylwetkami kandydatów"
                     height="294"
@@ -92,10 +92,10 @@
                 </figcaption>
               </figure>
             </li>
-            <li>
+            <li class="business-grid business-grid--active">
               <figure class="business-grid__card">
                 <div class="business-grid__img">
-                  <img
+                  <img class="business-grid__img--transform"
                     src="images/hw2/2-New-Orlean-vs-Golden-Star.jpg"
                     alt="dwaj koszykarze rzucają piłkę"
                     height="294"
@@ -115,10 +115,10 @@
                 </figcaption>
               </figure>
             </li>
-            <li>
+            <li class="business-grid business-grid--active">
               <figure class="business-grid__card">
                 <div class="business-grid__img">
-                  <img
+                  <img class="business-grid__img--transform"
                     src="images/hw2/3-Seafood-restaurant.jpg"
                     alt="logo restauracji"
                     height="294"
@@ -138,10 +138,10 @@
                 </figcaption>
               </figure>
             </li>
-            <li>
+            <li class="business-grid business-grid--active">
               <figure class="business-grid__card">
                 <div class="business-grid__img">
-                  <img
+                  <img class="business-grid__img--transform"
                     src="images/hw2/4-Prime-project.jpg"
                     alt="słuchawki nauszne"
                     height="294"
@@ -161,10 +161,10 @@
                 </figcaption>
               </figure>
             </li>
-            <li>
+            <li class="business-grid business-grid--active">
               <figure class="business-grid__card">
                 <div class="business-grid__img">
-                  <img
+                  <img class="business-grid__img--transform"
                     src="images/hw2/5-Boxes-project.jpg"
                     alt="dwa leżące obok siebie pudełka"
                     height="294"
@@ -184,10 +184,10 @@
                 </figcaption>
               </figure>
             </li>
-            <li>
+            <li class="business-grid business-grid--active">
               <figure class="business-grid__card">
                 <div class="business-grid__img">
-                  <img
+                  <img class="business-grid__img--transform"
                     src="images/hw2/6-Inspiration-has-no-Borders.jpg"
                     alt="monitor z otwartą stroną internetową"
                     height="294"
@@ -207,10 +207,10 @@
                 </figcaption>
               </figure>
             </li>
-            <li>
+            <li class="business-grid business-grid--active">
               <figure class="business-grid__card">
                 <div class="business-grid__img">
-                  <img
+                  <img class="business-grid__img--transform"
                     src="images/hw2/7-Limited-Edition-magazine.jpg"
                     alt="otwarty magazyn"
                     height="294"
@@ -230,10 +230,10 @@
                 </figcaption>
               </figure>
             </li>
-            <li>
+            <li class="business-grid business-grid--active">
               <figure class="business-grid__card">
                 <div class="business-grid__img">
-                  <img
+                  <img class="business-grid__img--transform"
                     src="images/hw2/8-LAB-project.jpg"
                     alt="metka z napisem firmy"
                     height="294"
@@ -253,10 +253,10 @@
                 </figcaption>
               </figure>
             </li>
-            <li>
+            <li class="business-grid business-grid--active">
               <figure class="business-grid__card">
                 <div class="business-grid__img">
-                  <img
+                  <img class="business-grid__img--transform"
                     src="images/hw2/9-Growing-Business.jpg"
                     alt="ktoś pracuje na laptopie"
                     height="294"
@@ -290,8 +290,8 @@
           </a>
           <address>
             <ul class="address">
-              <li>
-                <div><span>m. Warszawa, Aleje Jerozolimskie 21</span></div>
+              <li class="address__street">
+                <div class="address__street--height"><span>m. Warszawa, Aleje Jerozolimskie 21</span></div>
               </li>
               <li><a class="address__item--underline" href="info@example.com">info@example.com</a></li>
               <li><a class="address__item" href="tel:48111111111">+48 111 111 111</a></li>
@@ -326,7 +326,7 @@
         <div class="newsletter">
           <h3 class="social-links-footer__title">ZAPISZ SIĘ DO NEWSLETTERA</h3>
           <form class="newsletter__form">
-            <label>
+            <label class="newsletter__form--color" >
               <input class="newsletter__frame" name="email" placeholder="E-mail" />
             </label>
             <button class="newsletter__button" type="submit">

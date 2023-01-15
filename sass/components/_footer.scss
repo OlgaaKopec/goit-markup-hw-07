@@ -1,7 +1,7 @@
 @import "../utils/globals";
 @import "../utils/variables";
   
-.footer-wrapper {
+.footer-wrapper{
   background-color: $secondaryDarkGrey;
   color: $primaryWhite;
   font-size: 14px;
@@ -13,37 +13,43 @@
 .container {
   display: flex;
   gap: 70px;
-  ul{
-    >li{
-      margin-bottom: 9px;
-      line-height: 1.7;
-      font-style: normal;
-      div{
+.address {
+    &__item {
+    margin-bottom: 9px;
+  }
+}}}
+
+
+.address {
+  line-height: 1.7;
+  font-style: normal;
+&__street{
+  margin-bottom:9px;
+      &--height{
+        line-height: 1.7;
+        font-style: normal;
         margin-top: 20px;
       }
     }
+  &__item {
+      color: rgba(255, 255, 255, 0.6);
+      text-decoration: none;
+      &:hover,
+      &:focus{
+      color: $primaryBlue;
+      outline: none;
+      transition-duration: $transitionDurationTimeDefault;
+      transition-timing-function: $transitionTimingDefault;
+    }
+    &--underline{
+      text-decoration: underline;
+      color: rgba(255, 255, 255, 0.6);
+      &:hover,
+      &:focus{
+      color: $primaryBlue;
+      outline: none;
+      transition-duration: $transitionDurationTimeDefault;
+      transition-timing-function: $transitionTimingDefault;}
+    }
+    }
   }
-}
-}
-
-.address__item {
-  color: rgba(255, 255, 255, 0.6);
-  text-decoration: none;
-  &:hover,
-  &:focus{
-  color: $primaryBlue;
-  outline: none;
-  transition-duration: $transitionDurationTimeDefault;
-  transition-timing-function: $transitionTimingDefault;}
-
-&--underline {
-  text-decoration: underline;
-  color: $secodaryLightGrey;
-  &:hover,
-  &:focus{
-  color: $primaryBlue;
-  outline: none;
-  transition-duration: $transitionDurationTimeDefault;
-  transition-timing-function: $transitionTimingDefault;}
-}
-}
