@@ -1,7 +1,10 @@
 @import "../utils/globals";
 @import "../utils/variables";
 
-.newsletter__frame {
+.newsletter{
+  margin-top:12px;
+
+&__frame {
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
@@ -15,12 +18,7 @@
       border-color: $primaryBlue;
     }
   }
-
-  .newsletter__form--color{
-      fill: $secodaryLightGrey;
-  }
-    
-  .newsletter__button {
+  &__button {
     width: 200px;
     height: 50px;
     font-weight: 700;
@@ -37,3 +35,9 @@
       margin-left: 24px;
     }
   }
+&__form{
+  &--color{
+  fill: $secodaryLightGrey;
+}
+}
+}

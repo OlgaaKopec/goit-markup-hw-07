@@ -13,11 +13,7 @@
 .container {
   display: flex;
   gap: 70px;
-.address {
-    &__item {
-    margin-bottom: 9px;
-  }
-}}}
+}}
 
 
 .address {
@@ -26,12 +22,12 @@
 &__street{
   margin-bottom:9px;
       &--height{
-        line-height: 1.7;
-        font-style: normal;
         margin-top: 20px;
       }
     }
   &__item {
+    margin-bottom:9px;
+    &--color{
       color: rgba(255, 255, 255, 0.6);
       text-decoration: none;
       &:hover,
@@ -41,7 +37,10 @@
       transition-duration: $transitionDurationTimeDefault;
       transition-timing-function: $transitionTimingDefault;
     }
+    }
+      
     &--underline{
+      margin-bottom:9px;
       text-decoration: underline;
       color: rgba(255, 255, 255, 0.6);
       &:hover,
