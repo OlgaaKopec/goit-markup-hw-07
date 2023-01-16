@@ -27,19 +27,8 @@
     }
   &__item {
     margin-bottom:9px;
-    &--color{
-      color: rgba(255, 255, 255, 0.6);
-      text-decoration: none;
-      &:hover,
-      &:focus{
-      color: $primaryBlue;
-      outline: none;
-      transition-duration: $transitionDurationTimeDefault;
-      transition-timing-function: $transitionTimingDefault;
-    }
-    }
-      
-    &--underline{
+  }
+  &__item-underline{
       margin-bottom:9px;
       text-decoration: underline;
       color: rgba(255, 255, 255, 0.6);
@@ -49,6 +38,16 @@
       outline: none;
       transition-duration: $transitionDurationTimeDefault;
       transition-timing-function: $transitionTimingDefault;}
+    }
+    &__link{
+      color: rgba(255, 255, 255, 0.6);
+      text-decoration: none;
+      &:hover,
+      &:focus{
+      color: $primaryBlue;
+      outline: none;
+      transition-duration: $transitionDurationTimeDefault;
+      transition-timing-function: $transitionTimingDefault;
     }
     }
   }

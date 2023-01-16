@@ -29,15 +29,12 @@
     cursor: pointer;
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    margin: 12px 0 0 12px;
+    margin: 12px 0 0 12px; }
 
-    &--space {
+    &__button-icon {
       margin-left: 24px;
     }
-  }
-&__form{
-  &--color{
+&__label{
   fill: $secodaryLightGrey;
-}
 }
 }
